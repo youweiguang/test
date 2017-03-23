@@ -15,7 +15,7 @@ public class ScriptUtils {
 	private static Map<String, Script> scripts = new HashMap<String, Script>();
 	public static boolean needUpdate = false;
 	
-	private Script parseScript(File scriptCode) {
+	public static Script parseScript(File scriptCode) {
 		try {
 			String name = scriptCode.getName();
 			Script script = scripts.get(name);
